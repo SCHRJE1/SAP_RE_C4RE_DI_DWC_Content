@@ -31,7 +31,7 @@ If you have everything prepared, simply run the /graphs/SAP/RE/C4RE/CreateTables
 
 Afterwards, you can run the /graphs/SAP/RE/C4RE/Masterdata/Meta pipeline. You can run this pipeline as often you need.
 
-## Hint: 
+# Hint: 
 the /graphs/SAP/RE/C4RE/Masterdata/Meta pipeline is created to only load data from the source in full-mode. So, no delta is supported yet and deleted data in source will not be deleted in the target.
 
 And voilà, now you can see the data in your SAP Data Warehouse Cloud instance!
