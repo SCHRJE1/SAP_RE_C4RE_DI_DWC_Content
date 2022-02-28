@@ -22,11 +22,13 @@ Now, you will find two meta pipelines in the repository: /graphs/SAP/RE/C4RE/Cre
 
 Last step before running those pipelines is to maintain the connection settings in each sub-pipeline:
 Each of the two meta pipelines contains a few sub-pipelines. Before you can run one of the meta pipeline you have to manage the inbound and outbound connection of the custom operator in each sub-pipeline:
+
 Just double click on each sub-pipeline, right click on the last operator and maintain the connections by selecting those from the drop down menu.
 
 If you have everything prepared, simply run the /graphs/SAP/RE/C4RE/CreateTables/Meta first and once. If you already done it, this pipeline will fail because the tables are already in place in the data warehouse. So all good from this site.
 
 Afterwards, you can run the /graphs/SAP/RE/C4RE/Masterdata/Meta pipeline. You can run this pipeline as often you need.
+
 Hint: the /graphs/SAP/RE/C4RE/Masterdata/Meta pipeline is created to only load data from the source in full-mode. So, no delta is supported yet and deleted data in source will not be deleted in the target.
 
 And voilà, now you can see the data in your SAP Data Warehouse Cloud instance!
