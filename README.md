@@ -15,9 +15,8 @@ https://help.sap.com/viewer/5ac15e8fccb447199fda4509e813bf9f/Cloud/en-US/eb82493
 - Download and import the custom operator solution first: SAP RE C4RE custom python operator-1.0.0.tgz
 - Download and import the pipelines solution: SAP RE C4RE pipelines-1.0.0.tgz
 
-You will find the custom operator in the repository in **/subengines/com/sap/python36/operators/sap/c4r/masterdata**.
-
-The two meta pipelines you will find in the repository in **/graphs/SAP/RE/C4RE/CreateTables/Meta** and **/graphs/SAP/RE/C4RE/Masterdata/Meta**.
+After importing, you will find the custom operator in the repository: **/subengines/com/sap/python36/operators/sap/c4r/masterdata**.
+The two meta pipelines you also will find them in the repository: **/graphs/SAP/RE/C4RE/CreateTables/Meta** and **/graphs/SAP/RE/C4RE/Masterdata/Meta**.
 
 - The first one is for creating the tables in the entry layer of SAP Data Warehouse Cloud.
 - The second one is for loading data from the SAP Cloud for Real Estate API to of SAP Data Warehouse Cloud.
