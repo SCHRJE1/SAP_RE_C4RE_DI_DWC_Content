@@ -19,7 +19,7 @@ After importing, you will find the custom operator in the repository:
 - **/subengines/com/sap/python36/operators/sap/c4r/masterdata**.
 
 The two meta pipelines you also will find them in the repository: 
-- **/graphs/SAP/RE/C4RE/CreateTables/Meta** and **/graphs/SAP/RE/C4RE/Masterdata/Meta**.
+- **/graphs/SAP/RE/C4RE/*CreateTables*/Meta** and **/graphs/SAP/RE/C4RE/*Masterdata*/Meta**.
 
 - The first one is for creating the tables in the entry layer of SAP Data Warehouse Cloud.
 - The second one is for loading data from the SAP Cloud for Real Estate API to of SAP Data Warehouse Cloud.
@@ -30,10 +30,10 @@ Next step before running those pipelines is to maintain the connection settings 
 - Just double click on each sub-pipeline, right click on the last operator and maintain the connections by selecting those from the drop down menu.
 
 ## Creating tables in entry layer:
-If you have everything prepared, simply run the **/graphs/SAP/RE/C4RE/CreateTables/Meta** first and once. If you already done it, this pipeline will fail because the tables are already in place in the data warehouse. So all good from this site.
+If you have everything prepared, simply run the **/graphs/SAP/RE/C4RE/*CreateTables*/Meta** first and once. If you already done it, this pipeline will fail because the tables are already in place in the data warehouse. So all good from this site.
 
 ## Loading data into entry layer:
-Afterwards, you can run the **/graphs/SAP/RE/C4RE/Masterdata/Meta** pipeline. You can run this pipeline as often you need.
+Afterwards, you can run the **/graphs/SAP/RE/C4RE/*Masterdata*/Meta** pipeline. You can run this pipeline as often you need.
 
 **Hint**: 
 the **/graphs/SAP/RE/C4RE/Masterdata/Meta** pipeline is created to only load data from the source in full-mode. So, no delta is supported yet and deleted data in source will not be deleted in the target.
