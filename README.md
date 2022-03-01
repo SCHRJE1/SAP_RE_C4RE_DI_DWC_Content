@@ -15,8 +15,11 @@ https://help.sap.com/viewer/5ac15e8fccb447199fda4509e813bf9f/Cloud/en-US/eb82493
 - Download and import the custom operator solution first: SAP RE C4RE custom python operator-1.0.0.tgz
 - Download and import the pipelines solution: SAP RE C4RE pipelines-1.0.0.tgz
 
-After importing, you will find the custom operator in the repository: **/subengines/com/sap/python36/operators/sap/c4r/masterdata**.
-The two meta pipelines you also will find them in the repository: **/graphs/SAP/RE/C4RE/CreateTables/Meta** and **/graphs/SAP/RE/C4RE/Masterdata/Meta**.
+After importing, you will find the custom operator in the repository: 
+- **/subengines/com/sap/python36/operators/sap/c4r/masterdata**.
+
+The two meta pipelines you also will find them in the repository: 
+- **/graphs/SAP/RE/C4RE/CreateTables/Meta** and **/graphs/SAP/RE/C4RE/Masterdata/Meta**.
 
 - The first one is for creating the tables in the entry layer of SAP Data Warehouse Cloud.
 - The second one is for loading data from the SAP Cloud for Real Estate API to of SAP Data Warehouse Cloud.
@@ -26,8 +29,10 @@ Next step before running those pipelines is to maintain the connection settings 
 - Each of the two meta pipelines contains of a few sub-pipelines. Before you can run one of the meta pipeline you have to manage the inbound and outbound connection of the custom operator in each sub-pipeline:
 - Just double click on each sub-pipeline, right click on the last operator and maintain the connections by selecting those from the drop down menu.
 
+## Creating tables in entry layer:
 If you have everything prepared, simply run the **/graphs/SAP/RE/C4RE/CreateTables/Meta** first and once. If you already done it, this pipeline will fail because the tables are already in place in the data warehouse. So all good from this site.
 
+## Loading data into entry layer:
 Afterwards, you can run the **/graphs/SAP/RE/C4RE/Masterdata/Meta** pipeline. You can run this pipeline as often you need.
 
 **Hint**: 
