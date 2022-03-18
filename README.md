@@ -11,13 +11,13 @@ If you want to use these pipelines the following steps will be prerequisite:
 
 • Just a *hint* which credential you need from the service keys in the inbound connection from the SAP Cloud for Real Estate API:
   
-  Host: 			            <the *api_base_uri* from the service keys **without** 'https://'>
-  Protocol: 		          HTTPS
-  Authentication Type:	  OAuth2
-  OAuth2 Grant Type:	    client_credentials	
-  OAuth2 Token Endpoint:	https://<the *url* from the service key>/oauth/token?grant_type=client_credentials
-  OAuth2 Client ID:	      <*clientid* from the service keys>
-  OAuth2 Client Secret:	  <*clientsecret* from the service keys>
+  - Host: 			            <the ***api_base_uri*** from the service keys **without** 'https://'>
+  - Protocol: 		          **HTTPS**
+  - Authentication Type:	  **OAuth2**
+  - OAuth2 Grant Type:	    **client_credentials**
+  - OAuth2 Token Endpoint:	https://<the ***url*** from the service key>/oauth/token?grant_type=client_credentials
+  - OAuth2 Client ID:	      <***clientid*** from the service keys>
+  - OAuth2 Client Secret:	  <***clientsecret*** from the service keys>
 
 ## System Management: 
 https://help.sap.com/viewer/5ac15e8fccb447199fda4509e813bf9f/Cloud/en-US/eb8249323b7041d0ae7b670d064833ce.html
