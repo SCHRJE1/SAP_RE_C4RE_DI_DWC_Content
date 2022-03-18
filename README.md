@@ -15,7 +15,7 @@ If you want to use these pipelines the following steps will be prerequisite:
   - Protocol: 		          **HTTPS**
   - Authentication Type:	  **OAuth2**
   - OAuth2 Grant Type:	    **client_credentials**
-  - OAuth2 Token Endpoint:	https://<the ***url*** from the service key>/oauth/token?grant_type=client_credentials
+  - OAuth2 Token Endpoint:	https://<the ***url*** from the service key>***/oauth/token?grant_type=client_credentials***
   - OAuth2 Client ID:	      <***clientid*** from the service keys>
   - OAuth2 Client Secret:	  <***clientsecret*** from the service keys>
 
