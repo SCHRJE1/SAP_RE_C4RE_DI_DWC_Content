@@ -45,7 +45,10 @@ If you have everything prepared, simply run the **/graphs/SAP/RE/C4RE/*CreateTab
 ## Loading data into entry layer:
 Afterwards, you can run the **/graphs/SAP/RE/C4RE/*Masterdata*/Meta** pipeline. You can run this pipeline as often you need.
 
-**Hint**: 
+**Hint 1**:
+If the structrue of the SAP Cloud for Real Estate API changed, e.g. new fields are added then you can skip these attributes by simply adding them in the specififc sub-pipeline for this entity in the configuration part ***'Skip these attributes'*** but in whole word in ***lower-case***! The adavatge of this approach is, you don't have to manipulate/change the coding itself.
+
+**Hint 2**: 
 the **/graphs/SAP/RE/C4RE/*Masterdata*/Meta** pipeline is created to only load data from the source in full-mode. So, no delta is supported yet and deleted data in source will not be deleted in the target.
 
 And voilà, now you can see the data in your SAP Data Warehouse Cloud instance!
